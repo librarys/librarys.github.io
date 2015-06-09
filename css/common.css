@@ -1,0 +1,106 @@
+html,body,h1,h2,h3,h4,h5,h6,ul,ol,li,p,div,span,i,strong,em,dl,dd,dt{
+	margin: 0;padding:0;
+}
+body{
+	color:#333;
+	font: 14px/1.5 Arial,"微软雅黑";
+}
+li{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+a:{
+	color: #333;
+	text-decoration: none;
+	outline: 0;
+}
+a:hover{
+	color: #419cff;
+	text-decoration: none;
+}
+.clearflx{}
+.clearflx:before{
+	content: "";
+	height: 0;
+	overflow: hidden;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+.f12,.g-f12 {
+    font-size: 12px!important
+}
+
+.f13,.g-f13 {
+    font-size: 13px!important
+}
+
+.f14,.g-f14 {
+    font-size: 14px!important
+}
+
+.f15,.g-f15 {
+    font-size: 15px!important
+}
+
+.f16,.g-f16 {
+    font-size: 16px!important
+}
+
+.f18,.g-f18 {
+    font-size: 18px!important
+}
+
+.f20,.g-f20 {
+    font-size: 20px!important
+}
+
+.f22,.g-f22 {
+    font-size: 22px!important
+}
+
+.f24,.g-f24 {
+    font-size: 24px!important
+}
+
+.f26,.g-f26 {
+    font-size: 26px!important
+}
+
+.f28,.g-f28 {
+    font-size: 28px!important
+}
+
+.f30,.g-f30 {
+    font-size: 30px!important
+}
+
+.f32,.g-f32 {
+    font-size: 32px!important
+}
+
+.f36,.g-f36 {
+    font-size: 36px!important
+}
+.g-hide{
+	display: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
