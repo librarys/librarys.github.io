@@ -1,0 +1,134 @@
+*{padding:0px;margin:0px;}
+body {font-family:"Primary-Medium",Arial,"Helvetica Neue",Helvetica,sans-serif; color:#000; font-size:14px; background:#000;padding:0px;margin:0px;}
+ol, ul ,li {list-style: none;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+address, caption, cite, code, dfn,em,i, th, var, optgroup {font-style: normal;font-weight: normal;}
+fieldset, img {border: 0;}
+a,a:visited{text-decoration:none;}
+
+.w1080{ max-width:1080px; margin:0 auto;}
+
+#wrapper{width:100%;position:relative;}
+#header{ height:55px; text-align:center; padding-top:15px}
+#content{margin-top:15px; position:relative;}
+
+.banner{width:100%; max-width:1440px; height:451px; margin:0 auto; background:url(../images/kv.jpg) center; position:relative; z-index:2}
+.banner .pic{ position:absolute; background:url(../images/kv_pic.png) no-repeat; width:465px; height:494px; top:0; left:50%; margin-left:115px;}
+.banner .pic .btn{ position:absolute; height:60px; width:290px; top:332px; right:0}
+.banner .txt{ position:absolute; background:url(../images/kv_txt.png) no-repeat; width:344px; height:305px; left:50%; margin-left:-290px; top:50%; margin-top:-157px;}
+.banner .txt .btn{ position:absolute; height:60px; width:336px; left:5px; bottom:0}
+
+.banner2{ background:url(../images/kv2.jpg) no-repeat  center; height:247px;}
+.banner2 .txt{ position:absolute; background:url(../images/kv2-txt.png) no-repeat; width:471px; height:187px; left:50%; margin-left:-235px; top:50%; margin-top:-93px;}
+
+.banner3{ background:url(../images/kv3.png) no-repeat  center; height:633px; margin-top:20px;}
+.banner3 .pic2{ position:absolute; left:50%; margin-left:300px; top:0px; background:url(../images/kv3-pic.png) no-repeat; width:279px; height:670px;}
+.banner3 .pic2 .btn{ position:absolute; width:130px; height:25px; left:0; bottom:48px;}
+.banner3 .video{ position:absolute; background:url(../images/kv3-video.png) no-repeat; width:724px; height:459px; left:50%; margin-left:-211px; top:100px; cursor:pointer;}
+
+.banner4{ background:url(../images/kv4.jpg) no-repeat center; height:451px;}
+.banner4 .txt{ position:absolute; background:url(../images/kv4-txt.png) no-repeat; width:629px; height:324px; left:50%; margin-left:-314px; top:50%; margin-top:-162px;}
+.banner4 .txt .btn1{ position:absolute; width:330px; height:78px; left:152px; top:194px;}
+.banner4 .txt .btn2{ position:absolute; width:115px; height:28px; left:257px; bottom:0px;}
+
+/*悬浮*/
+.suspend{ position:fixed; right:20px; bottom:100px; background:url(../images/buyBtn.png) no-repeat; width:124px; height:145px; z-index:22}
+.suspend2{ position:fixed;left:20px; bottom:100px; background:url(../images/buyBtn2.png) no-repeat; width:151px; height:176px; z-index:22;}
+.suspend2 .buy{ position:absolute; width:105px; height:50px; top:50px; right:0}
+.suspend2 .more{ position:absolute; width:105px; height:25px; top:114px; right:0}
+
+/*照片墙*/
+.photoWall{ width:1088px; margin:0 auto; position:relative;}
+.photoWall .phtoLeft{float:left; width:272px; height:100%; overflow:hidden;}
+.photoWall .phtoCenter{float:left; width:544px; height:100%; overflow:hidden;}
+.photoWall .phtoRight{float:left; width:272px; height:100%; overflow:hidden;}
+.photoWall li{float:left; width:132px; height:132px; margin-right:4px; margin-bottom:4px; position:relative; cursor:pointer;}
+.photoWall li img{ width:100%; height:100%;}
+.photoWall li .share{ position:absolute; width:100%; height:100%; left:0; top:0; background:#e70e79; opacity:0.5; display:none;}
+.photoWall li .play{ position:absolute; background:url(../images/play.png) no-repeat; width:106px; height:106px; left:50%; margin-left:-53px; top:50%; margin-top:-53px; display:none; transition:all 1s ease 0s;}
+.photoWall li:hover .share ,.photoWall li:hover .play{display:block;}
+.photoWall .bigLI{ width:268px; height:268px;}
+.photoWall .ID{width:540px; height:268px; cursor:default}
+.photoWall .ID .btn1{ position:absolute; width:332px; height:72px; left:103px; top:128px;}
+.photoWall .ID .btn2{ position:absolute; width:93px; height:25px; right:15px; bottom:10px; cursor:pointer;}
+
+/*图片列表*/
+.photoList{ width:1088px; margin:10px auto 0; position:relative; padding-bottom:260px; overflow:hidden}
+.photoList li{ float:left; width:270px; height:270px; overflow:hidden; position:relative}
+.photoList li img{ width:100%; height:100%;}
+.photoList li .share{ position:absolute; width:100%; height:100%; left:0; top:0;opacity:0.5; display:none; border:8px solid #e5047a; border-bottom-width:37px; box-sizing:border-box; display:none;}
+.photoList li .txt{ position:absolute; width:100%; height:37px; line-height:37px; text-align:center; color:#fff; font-size:18px; overflow:hidden; left:0; bottom:0; display:none;}
+.photoList li:hover .share ,.photoList li:hover .txt{display:block;}
+.photoList .upBtn{ position:absolute; background:url(../images/up_btn.png) no-repeat; width:50px; height:46px; left:50%; margin-left:-25px; bottom:175px; cursor:pointer;}
+.photoList .oper{ position:absolute; width:100%; height:119px; bottom:0; background:url(../images/btn.png) no-repeat center;}
+.photoList .oper .btn1{ position:absolute; width:235px; height:43px; left:282px; bottom:0 ; cursor:pointer}
+.photoList .oper .btn2{ position:absolute; width:235px; height:43px; right:275px; bottom:0;cursor:pointer}
+
+/*图片详情*/
+.photoShow{width:1088px; margin:0 auto; position:relative; overflow:hidden}
+.photoShow dl{float:left; width:530px; height:260px; padding-right:28px;padding-top:40px;}
+.photoShow dl.no-pr{ padding-right:0}
+.photoShow dl dt{ float:left; width:260px; height:262px; position:relative; cursor:pointer;}
+.photoShow dl dt img{ width:100%; height:100%;}
+.photoShow dl .share{ position:absolute; width:100%; height:100%; left:0; top:0; background:#e70e79; opacity:0.5; display:none;}
+.photoShow dl .play{ position:absolute; background:url(../images/play.png) no-repeat; width:106px; height:106px; left:50%; margin-left:-53px; top:50%; margin-top:-53px; display:none; transition:all 1s ease 0s;}
+.photoShow dl dt:hover .share ,.photoShow dl dt:hover .play{display:block;}
+.photoShow dl dd{ float:right; width:250px; overflow:hidden; padding-bottom:8px; color:#fff;}
+.photoShow dl dd.name{ font-size:22px;  padding-top:10px;}
+.photoShow dl dd.txt{ font-size:16px; line-height:22px; padding-top:15px; height:110px; overflow:hidden}
+.photoShow dl dd.txt label{ color:#c7046c;}
+.photoShow dl dd.oper{ background:url(../images/icon2.png) no-repeat center left; height:23px; line-height:23px; color:#c7046c; padding-bottom:0}
+.photoShow dl dd.oper .btn{ float:left; width:120px; height:23px; text-indent:35px; cursor:pointer; font-size:18px;}
+
+/*活动规则*/
+.ruleBox{position:absolute; background:url(../images/ruleBox.jpg) no-repeat; width:972px; height:1064px; left:50%; margin-left:-486px; top:0; z-index:10; display:none;}
+.ruleBox .btn{ position:absolute; width:130px; height:38px; left:50%; margin-left:-68px; bottom:34px; cursor:pointer;}
+
+/*视频播放器*/
+.videoBox{ position:absolute; width:1024px;  left:50%; margin-left:-512px; top:52px; z-index:10; display:none}
+.videoBox .video{ width:100%; height:580px; background:#000;}
+.videoBox .videoName{ height:70px; background:#181818; position:relative; font-size:24px; color:#fff; text-indent:20px; line-height:70px; padding-right:440px; overflow:hidden;}
+.videoBox .videoName .oper{ position:absolute; background:url(../images/icon.png) no-repeat left center; width:430px; height:70px; right:0; top:0; line-height:70px;}
+.videoBox .videoName .oper .dz{ float:left; width:155px; height:70px; text-indent:40px; cursor:pointer;}
+.videoBox .videoName .oper .pl{ float:left; width:168px; height:70px; text-indent:40px; cursor:pointer;}
+.videoBox .videoName .oper .zf{ float:left; width:106px; height:70px; text-indent:40px; cursor:pointer;}
+.videoBox .close{ position:absolute; background:url(../images/close.png) no-repeat; width:45px; height:44px; right:20px; top:20px; cursor:pointer;}
+.videoBox .videoDiscuss{ background:url(../images/popBox-pl.png) no-repeat; height:931px; position:relative; display:none;}
+.videoBox .videoDiscuss h2{ position:absolute; width:100%; text-align:center; top:50px; color:#f13683; font-size:16px; left:0}
+.videoBox .videoDiscuss textarea{position:absolute; width:830px; height:95px; border:none; background:none; top:87px; left:77px; padding:10px 20px; color:#fff;}
+.videoBox .videoDiscuss .iptBox{ position:absolute; width:180px; height:30px; line-height:30px; color:#fff; left:310px; top:248px; font-size:18px; color:#fff;}
+.videoBox .videoDiscuss .iptBox label{ padding-left:5px;}
+.videoBox .videoDiscuss .iptBox input{ border:none; width:130px; float:right; height:30px; border:none; background:none; color:#fff; font-size:18px;}
+.videoBox .videoDiscuss .tel{ left:536px;}
+.videoBox .videoDiscuss .tjBtn{ width:185px; height:40px; left:419px; top:319px; position:absolute; cursor:pointer;}
+.videoBox .videoDiscuss .list{ position:absolute; width:895px; height:310px; left:55px; bottom:170px; overflow:auto}
+.videoBox .videoDiscuss .list dl{ background:url(../images/popBox-pl1.png) no-repeat; padding-left:55px; padding-right:40px;}
+.videoBox .videoDiscuss .list dl dt{ font-size:18px; color:#ec3786; font-weight:bold; padding-top:5px;}
+.videoBox .videoDiscuss .list dl dt .oper{ padding-left:45px; color:#fff; font-weight:normal;}
+.videoBox .videoDiscuss .list dl dt .oper a{ text-decoration:underline; padding:0 3px; color:#fff; font-size:16px;}
+.videoBox .videoDiscuss .list dl dd{ padding-bottom:25px; border-bottom:1px solid #35252f; color:#fff; font-size:20px; line-height:25px; padding-top:10px}
+
+/*视频上传*/
+.videoUp{ position:absolute; background:url(../images/popBox-sc.png) no-repeat; width:856px; height:773px; left:50%; margin-left:-428px;top:55px; z-index:12; display:none;}
+.videoUp .close{ position:absolute; width:45px; height:44px; right:10px; top:10px; cursor:pointer;}
+.videoUp .videoImg{position:absolute; width:645px; height:362px; left:106px; top:41px;}
+.videoUp .videoImg .share{ position:absolute; width:100%; height:100%; left:0; top:0; background:#000; opacity:0.5;  }
+.videoUp .videoImg .play{ position:absolute; background:url(../images/play2.png) no-repeat; width:114px; height:98px; left:50%; margin-left:-57px; top:50%; margin-top:-49px; z-index:3}
+.videoUp .videoImg .play-btn{ position:absolute; width:114px; height:98px; left:50%; margin-left:-57px; top:50%; margin-top:-49px; z-index:4; opacity: 0;}
+.videoUp textarea{position:absolute; width:603px; height:101px; border:none; background:none; top:424px; left:106px; padding:10px 20px; color:#fff;}
+.videoUp .iptBox{ position:absolute; width:180px; height:30px; line-height:30px; color:#fff; left:211px; bottom:174px; font-size:18px; color:#fff;}
+.videoUp .iptBox label{ padding-left:5px;}
+.videoUp .iptBox input{ border:none; width:130px; float:right; height:30px; border:none; background:none; color:#fff; font-size:18px;}
+.videoUp .tel{ left:450px;}
+.videoUp .cqBtn{ width:246px; height:60px; left:305px; bottom:58px; position:absolute; cursor:pointer;}
+
+/*浮层*/
+.listPopBox{ position:absolute; width:100%; max-width:1380px; height:426px; left:50%; margin-left:-690px; top:600px; z-index:11; display:none}
+.listPopBox .leftVideo{ position:absolute; left:0; top:0; background:url(../images/tc_1.png)  no-repeat; width:678px; height:426px; cursor:pointer;}
+.listPopBox .rightBuy{ position:absolute; right:0; top:0; background:url(../images/tc_2.png)  no-repeat; width:642px; height:359px;}
+.listPopBox .rightBuy .buyBtn{ position:absolute; width:250px; height:30px; left:192px; top:234px;}
+.listPopBox .rightBuy .moreBtn{ position:absolute; width:250px; height:30px; left:192px; top:283px;}
+/*遮罩层*/
+.mask{position:absolute; background:#000; opacity:0.9; z-index:9; left:0; top:0; height:100%; width:100%; display:none; min-height:830px;}
+
+
